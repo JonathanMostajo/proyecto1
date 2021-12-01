@@ -10,12 +10,22 @@ font-family: 'Maven Pro', sans-serif; */
 
 body {
   font-family: "Maven Pro", sans-serif;
-  background-color: lightgrey;
+  background-image: url(https://fondosmil.com/fondo/56560.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+ 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .navbar {
   background-color: black;
   color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .navbar-menu {
@@ -41,7 +51,7 @@ body {
 }
 
 .navbar-link:hover {
-  color: steelblue;
+  color: goldenrod;
   cursor: pointer;
 }
 
@@ -52,24 +62,27 @@ body {
   letter-spacing: 3px;
   margin: 20px;
   align-items: center;
+  margin-top: 80px;
 }
 
 .hero-title {
   font-size: 36px;
   text-transform: uppercase;
+  color: whitesmoke;
 }
 
 .hero-title span {
-  color: steelblue;
+  color: goldenrod;
 }
 
 .hero-caption {
   font-size: 20px;
   margin-bottom: 10px;
+  color: whitesmoke;
 }
 
 .hero-caption span {
-  color: steelblue;
+  color: goldenrod;
 }
 
 .hero img {
@@ -100,9 +113,9 @@ body {
 }
 
 .characters-title {
-    background-color: black;
+    background-color: lightgrey;
     border-radius: 15px;
-    color: steelblue;
+    color: black;
     padding: 3px;
     font-size: 17px;
 }
@@ -110,10 +123,44 @@ body {
 .characters-caption{
     font-size: 15px;
     margin: 10px 0px;
+    color: white;
 }
 
 .characters-item img {
     object-fit: contain;
     width: 70%;
     height: 70%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.contact a::before{
+    content: "✉️";
+}
+
+.contact a:hover {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+footer span {
+    color: goldenrod;
 }
